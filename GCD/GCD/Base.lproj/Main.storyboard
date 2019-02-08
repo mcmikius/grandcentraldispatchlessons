@@ -54,15 +54,24 @@
                                     <constraint firstAttribute="height" constant="319" id="5td-mU-0N4"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="wRI-6Y-Zht">
+                                <rect key="frame" x="177" y="213" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xhN-Au-OUO" firstAttribute="width" secondItem="sK6-uL-oN3" secondAttribute="width" id="Dbt-gv-itp"/>
                             <constraint firstItem="xhN-Au-OUO" firstAttribute="centerX" secondItem="sK6-uL-oN3" secondAttribute="centerX" id="FLd-jK-j7u"/>
+                            <constraint firstItem="wRI-6Y-Zht" firstAttribute="centerY" secondItem="xhN-Au-OUO" secondAttribute="centerY" id="YJ0-F0-4FZ"/>
+                            <constraint firstItem="wRI-6Y-Zht" firstAttribute="centerX" secondItem="xhN-Au-OUO" secondAttribute="centerX" id="iaQ-dY-onJ"/>
                             <constraint firstItem="xhN-Au-OUO" firstAttribute="top" secondItem="sK6-uL-oN3" secondAttribute="top" id="p9d-lv-61y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sK6-uL-oN3"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="wRI-6Y-Zht" id="wqk-J6-Xbk"/>
+                        <outlet property="imageView" destination="xhN-Au-OUO" id="ok7-rf-iW1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iut-QB-d9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
